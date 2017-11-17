@@ -9,8 +9,10 @@
 		<th>First Name</th><th>Last Name</th><th>Age</th><th>Eye Color</th>
 	</tr>
 	<tr>
-		<td>
-<p id="demo"></p>
+		<td id="fn"> </td><td id="ln"> </td><td id="age"> </td><td id="ec"> </td>
+	</tr>
+</table>
+
 
 <script>
 var person = {
@@ -20,8 +22,11 @@ var person = {
     eyeColor  : "blue"
 };
 
-document.getElementById("demo").innerHTML =
-person.firstName + " is " + person.age + " years old.";
+document.getElementById("fn").innerHTML =
+person.firstName;
+document.getElementById("ln").innerHTML =person.lastName;
+document.getElementById("age").innerHTML =person.age;
+document.getElementById("ec").innerHTML =person.eyeColor;
 </script>
 
 </body>

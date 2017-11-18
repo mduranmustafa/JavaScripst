@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
 <script>
 function validateForm() {
@@ -12,12 +14,12 @@ function validateForm() {
 </script>
 </head>
 <body>
-
+<div class="w3-container w3-card-4 w3-margin" style="width:50%;">
 <form name="myForm" action="/action_page.php"
-onsubmit="return validateForm()" method="post">
-Name: <input type="text" name="fname">
-<input type="submit" value="Submit">
+onsubmit="return validateForm()" method="post" class="w3-container">
+Name: <input type="text" name="fname" class="w3-input">
+<input type="submit" value="Submit" class="w3-input">
 </form>
-
+</div>
 </body>
 </html>

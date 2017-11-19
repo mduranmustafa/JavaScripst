@@ -3,13 +3,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
-
+<form name="myForm" action="" method="post" onsubmit="return validateForm()">
+Name: <input type="number" name="fname">
+<input type="submit" value="Submit">
+</form>
 <ul id="liste" class="w3-ul w3-card-4 w3-indigo" style="width:30%; "></ul>
 
 <script>
 
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+        return x;
+}
+
 var i = 0;
-var len = 10;
+var len = x;
 var text ="";
 var text1 = "Merhaba";
 

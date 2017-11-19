@@ -2,33 +2,21 @@
 <html>
 <body>
 
-<p id="demo"></p>
+<ul id="liste"></ul>
 
 <script>
-var cars = ["BMW", "Volvo", "Saab", "Ford"];
 
 var i = 0;
-var len = cars.length;
-var text = "";
+var len = 10;
+var text ="";
+var text1 = "Merhaba";
 
 for (; i < len; ) {
-    text += cars[i] + "<br>";
+    text += "<li>" + text1 + i + "</li>";
     i++;
 }
-document.getElementById("demo").innerHTML = text;
+document.getElementById("liste").innerHTML = text;
 </script>
 
 </body>
 </html>
-
-
-
-<script>
-function myFunction() {
-    var person = prompt("Please enter your name", "Harry Potter");
-    if (person != null) {
-        document.getElementById("demo").innerHTML =
-        "Hello " + person + "! How are you today?";
-    }
-}
-</script>

@@ -27,12 +27,25 @@ document.getElementById("demo").innerHTML = text;
 function myFunction1() {
     points.sort();
     
+var text = "";
+var x;
+for (x in points) {
+    text += "<li>" + points[x] + "</li>";
 	
-	document.getElementById("demo").innerHTML = points;
+} 	
+	document.getElementById("demo").innerHTML = text;
 }
 function myFunction2() {
     points.sort(function(a, b){return a - b});
-    document.getElementById("demo").innerHTML = points;
+    
+var text = "";
+var x;
+for (x in points) {
+    text += "<li>" + points[x] + "</li>";
+	
+} 	
+	
+	document.getElementById("demo").innerHTML = text;
 }
 </script>
 

@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body onload="myFunction()">
 
-<p>Click the button to get a time-based greeting:</p>
 
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
+<div id="demo"></div>
 
 <script>
 function myFunction() {
     var greeting;
+	var greetings="";
+	
     var time = new Date().getHours();
     if (time < 10) {
         greeting = "Good morning";
+
+		for(i=0;i<11;i++) {
+			greetings += "<h1>" + greeting + "</h1>";
+		}
     } else if (time < 20) {
         greeting = "Good day";
     } else {
-        greeting = "Good evening";
+		var i;
+		greeting = "Good morning";
+		for(i=0 ; i<11 ; i++ ) {
+			greetings += "<h1>" + greeting + "</h1>";			
+		}
     }
-document.getElementById("demo").innerHTML = greeting;
+document.getElementById("demo").innerHTML = greetings;
 }
 </script>
 

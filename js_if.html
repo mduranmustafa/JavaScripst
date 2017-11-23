@@ -12,9 +12,7 @@
 <body onload="myFunctionGreetings()">
 
 <div class="container">
-	<div class="card bg-primary text-white">
-		<div id="demo" class="card-body"></div>
-	</div>
+	<div id="greet" class="card bg-primary text-white"></div>
 </div>
 
 <script>
@@ -39,10 +37,10 @@ function myFunctionGreetings() {
 		var i;
 		greeting = "Good evening";
 		for(i=0 ; i<11 ; i++ ) {
-			greetings += "<h1>" + greeting + "</h1>";			
+			greetings += "<div class=card-body>" + greeting + "</div>";			
 		}
     }
-document.getElementById("demo").innerHTML = greetings;
+document.getElementById("greet").innerHTML = greetings;
 }
 </script>
 

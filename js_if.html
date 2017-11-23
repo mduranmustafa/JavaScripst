@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JS Codition</title>
+  <title>JS Condition</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -9,13 +9,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </head>
-<body onload="myFunction()">
+<body onload="myFunctionGreetings()">
 
-
-<div id="demo"></div>
-
+<div class="container">
+	<div class="card bg-primary text-white">
+		<div id="demo" class="card-body"></div>
+	</div>
+</div>
 <script>
-function myFunction() {
+function myFunctionGreetings() {
     var greeting;
 	var greetings="";
 	
@@ -34,7 +36,7 @@ function myFunction() {
 		}
     } else {
 		var i;
-		greeting = "Good morning";
+		greeting = "Good evening";
 		for(i=0 ; i<11 ; i++ ) {
 			greetings += "<h1>" + greeting + "</h1>";			
 		}

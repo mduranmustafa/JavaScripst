@@ -30,11 +30,11 @@ var myObject= {"customers":[
 <div class="w3-card-4">
 <table id="id01" class="w3-table-all">
   <tr class="w3-black">
-    <th>Customer</th>
+    <th onclick="w3.sortHTML('#id01', '.item', 'td:nth-child(1)')" style="cursor:pointer">Customer</th>
     <th>City</th>
     <th>Country</th>
   </tr>
-  <tr w3-repeat="customers">
+  <tr w3-repeat="customers" class="item">
     <td>{{CustomerName}}</td>
     <td>{{City}}</td>
     <td>{{Country}}</td>

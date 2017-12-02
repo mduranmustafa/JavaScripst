@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fuel Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<script>
+		 function Fuel_Calculate(){
+		 f = document.getElementById('fuel').value;
+		 km= f * 5 /100;
+		 document.getElementById('km').innerHTML=km;
+		 }
+	</script>
+</head>
+	<body>
+		<div class="container">
+		<form class="form-inline" name="fuel_calc" action="">
+			Fuel :  <input type="number" class="form-control" id="fuel"/> lt
+			<input type="submit" value="Calculate" class="btn btn-primary" onclick="Fuel_Calculate()"/>
+		</form>
+		<div id="km" class="card"> </div>
+		</div>
+	</body>
+</html>

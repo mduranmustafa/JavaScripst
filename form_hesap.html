@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+	<div id="tablo_ekle"> </div>
+
+<script>
+	var tablo = {		
+
+		tabloYap:function (satir,sutun) {
+			tablo_icerik="<table border=1>";
+			
+			for (i=1;i<satir;i++) {
+				tablo_icerik += "<tr>";
+				
+				for(j=1;j<sutun;j++) { 
+				tablo_icerik += "<td>" + "aa" + "</td>";
+				}
+				tablo_icerik+="</tr>";
+			}
+			tablo_icerik="</table>";
+		}
+		return tablo_icerik;
+	}
+
+	tablomuz=tablo.tabloYap(4,4);
+	document.getElementById("tablo_ekle").innerHTML=tablomuz;
+</script>
+
+</body>
+</html>
+
+

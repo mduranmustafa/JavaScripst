@@ -11,7 +11,8 @@
 	<script>
 		 function Fuel_Calculate(){
 		 f = document.getElementById("fuel").value;
-		 km= f * 100 /5;
+		 mpg = document.getElementById("mpg").value;
+		 km= f * 100 / mpg;
 		 //document.getElementById("km").innerHTML = km;
 		 alert(km);
 		 }
@@ -22,6 +23,7 @@
 		<div class="container">
 		<form class="form-inline" name="fuel_calc" action="">
 			Fuel :  <input type="number" class="form-control" id="fuel"/> lt
+			MPG : <input type="number" class="form-control" id="mpg"/> 
 			<input type="submit" value="Calculate" class="btn btn-primary" onclick="Fuel_Calculate()"/>
 		</form>
 		

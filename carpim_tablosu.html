@@ -1,28 +1,42 @@
 <!DOCTYPE html>
-<title>My Example</title>
+<html lang="en">
+<head>
+  <title>Carpim Tablosu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1> CARPIM TABLOSU </h1>
+			<table id="msg" class="table table-striped"></table>
 
 
-<table id="msg" border="1"></table>
+			<script>
+			  // Set variables
+			  var output = "";
 
-<script>
-  // Set variables
-  var output = "";
+			  // Outer loop
+			  for (i = 1; i <= 10; i++) {
 
-  // Outer loop
-  for (i = 1; i <= 10; i++) {
+				  // output += "<h1>" + i + " times table</h1>";
+				  output += "<tr>";
 
-      // output += "<h1>" + i + " times table</h1>";
-      output += "<tr>";
+					// Inner loop
+					for (j = 1; j <= 10; j++) {
+					  output += "<td>" + j + " x " + i + " = " + j * i + "</td>";
+				  }
 
-        // Inner loop
-        for (j = 1; j <= 10; j++) {
-          output += "<td>" + j + " x " + i + " = " + j * i + "</td>";
-      }
+				  output += "</tr>";
 
-      output += "</tr>";
+			  }
 
-  }
-
-  // Output results to the above HTML element
-  document.getElementById("msg").innerHTML = output;
-</script>
+			  // Output results to the above HTML element
+			  document.getElementById("msg").innerHTML = output;
+			</script>
+		</div>
+</body>
+</html>

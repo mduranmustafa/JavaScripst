@@ -1,0 +1,21 @@
+<html>
+<body>
+<script type="text/javascript">
+// Create a new date object
+var someDate = new Date();
+// Retrieve the first four values using the
+// appropriate get methods
+document.write( "Minutes = " + someDate.getMinutes() + "<br>" );
+document.write( "Year = " + someDate.getFullYear() + "<br>" );
+document.write( "Month = " + someDate.getMonth() + "<br>" );
+document.write( "Date = " + someDate.getDate() + "<br>" );
+// Set the minutes to 34
+someDate.setMinutes( 34 );
+document.write( "Minutes = " + someDate.getMinutes() + "<br>" );
+// Reset the date
+someDate.setDate( 32 );
+document.write( "Date = " + someDate.getDate() + "<br>" );
+document.write( "Month = " + someDate.getMonth() + "<br>" );
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<title>My Example</title>
+
+
+<table id="msg" border="1"></table>
+
+<script>
+  // Set variables
+  var output = "";
+
+  // Outer loop
+  for (i = 1; i <= 10; i++) {
+
+      // output += "<h1>" + i + " times table</h1>";
+      output += "<tr>";
+
+        // Inner loop
+        for (j = 1; j <= 10; j++) {
+          output += "<td>" + j + " x " + i + " = " + j * i + "</td>";
+      }
+
+      output += "</tr>";
+
+  }
+
+  // Output results to the above HTML element
+  document.getElementById("msg").innerHTML = output;
+</script>
